@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #88bfd4 !important;
+}
+
+/* Estilos de las teclas */
+.white-key {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    width: 130px;
+    height: 400px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 200px;
+    position: relative;
+    background-color: white;
+}
+
+.white-key:hover {
+    animation: brillito 2s infinite;
+}
+
+@keyframes brillito {
+    0% {
+        background: #88bfd4; 
+    }
+    20%{
+        background: #54b2d8;
+    }
+    30%{
+        background: #37a8d4;
+    }
+    50% {
+        background: #129bd1; 
+        
+    }
+    100% {
+        background: #00709c; 
+    }
+}
+
+
+        .black-keys {
+            position: relative;
+            display: flex;
+            margin-top: -200px;
+            z-index: 2;
+        }
+        .black-key, .black-key1 {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            width: 60px;
+            height: 200px;
+            border: 2px solid #333;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            background-color: black;
+            color: white;
+            z-index: 1;
+        } 
+
+        .black-key:nth-child(1) { left: 105px; top: -200px;}
+        .black-key:nth-child(2) { left: 235px; top: -200px;}
+        .black-key:nth-child(3) { left: 505px; top: -200px;}
+        .black-key:nth-child(4) { left: 640px; top: -200px;}
+        .black-key:nth-child(5) { left: 775px; top: -200px;}
+        .black-key1:nth-child(1) { left: 1040px; top: -200px;}
+        .black-key1:nth-child(2) { left: 1175px; top: -200px;}
+        .black-key1:nth-child(3) { left: 1438px; top: -200px;}
+        .black-key1:nth-child(4) { left: 1575px; top: -200px;}
+        .black-key1:nth-child(5) { left: 1710px; top: -200px;}
+
+
+

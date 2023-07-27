@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="piano">
+        <div id="octava-1">
+            <select class="js-example-basic-single" name="Scale">
+                <option value="EMa">Escala Mayor</option>
+                <option value="EMe">Escala Menor</option>
+            </select>
+            <select class="js-example-basic-single" name="Root-note">
+                <option value="">Do</option>
+                <option value="">Do#</option>
+                <option value="">Re</option>
+                <option value="">Re#</option>
+                <option value="">Mi</option>
+                <option value="">Fa</option>
+                <option value="">Fa#</option>
+                <option value="">Sol</option>
+                <option value="">Sol#</option>
+                <option value="">La</option>
+                <option value="">La#</option>
+                <option value="">Si</option>
+            </select>
+            <div class="white-keys">
+                <button class="white-key">Do</button>
+                <button class="white-key">Re</button>
+                <button class="white-key">Mi</button>
+                <button class="white-key">Fa</button>
+                <button class="white-key">Sol</button>
+                <button class="white-key">La</button>
+                <button class="white-key">Si</button>
+                <button class="white-key">Do</button>
+                <button class="white-key">Re</button>
+                <button class="white-key">Mi</button>
+                <button class="white-key">Fa</button>
+                <button class="white-key">Sol</button>
+                <button class="white-key">La</button>
+                <button class="white-key">Si</button>
+            </div>
+            <div class="black-keys">
+                <div id="octava-menor-blanca">
+                    <button class="black-key">Do#</button>
+                    <button class="black-key">Re#</button>
+                    <button class="black-key">Fa#</button>
+                    <button class="black-key">Sol#</button>
+                    <button class="black-key">La#</button>
+                </div>
+                <div id="octava-mayor-negra"> 
+                    <button class="black-key1">Do#</button>
+                    <button class="black-key1">Re#</button>
+                    <button class="black-key1">Fa#</button>
+                    <button class="black-key1">Sol#</button>
+                    <button class="black-key1">La#</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
