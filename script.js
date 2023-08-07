@@ -26,12 +26,15 @@ playButtom.addEventListener("click", async () => {
     synth.frequency.value = RootNote.value;
 
     if (Escala === "Escala-Mayor") {
-        const armonizacion = [0, 2, 4, 5, 7, 9, 11];
-        for (const i of armonizacion) {
-            const notaArmonizada = synth.frequency.value * Math.pow(2, i / 8);
+        let armonizacion = [0, 2, 4, 5, 7, 9, 11];
+
+       
+        console.log(armonizacion.filter((x) => x > 5));
+
+        for (const st of armonizacion) {
+            const notaArmonizada = synth.frequency.value * Math.pow(2, st / 8);
             synth.triggerAttackRelease(notaArmonizada, "8n");
             await new Promise(resolve => setTimeout(resolve, 500));
-
         }
     }
     else if(Escala === "Escala-Menor") {
