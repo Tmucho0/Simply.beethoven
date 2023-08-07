@@ -1,11 +1,5 @@
-import "https://unpkg.com/tone@14.7.77/build/Tone.js";
-"C4", // Do
-"D4", // Re
-"E4", // Mi
-"F4", // Fa
-"G4", // Sol
-"A4", // La
-"B4" // Si
+let Synth = import("https://unpkg.com/tone@14.7.77/build/Tone.js");
+
 const Doblanca = document.getElementById("DoB");
 Doblanca.addEventListener("click", async () => {
     await Tone.start();
@@ -62,8 +56,6 @@ Doblanca1.addEventListener("click", async () => {
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C4", "8n");
 });
-
-// script.js
 
 $(document).ready(function () {
     $('.js-example-basic-single').select2();
