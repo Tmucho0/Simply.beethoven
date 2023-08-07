@@ -1,4 +1,4 @@
-// Esto sirve para implementar select2 al codigo basicamente
+// Esto sirve para implementar select2 al codigo.
 
 $(document).ready(function () {
     $('.js-example-basic-single').select2();
