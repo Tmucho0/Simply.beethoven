@@ -45,6 +45,18 @@ body {
     top: 0;
 }
 
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid #fff; 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-35%, -49%) rotate(90deg); 
+    z-index: 1; 
+}
 
 .white-key:hover {
     animation: brillito 2s infinite;
@@ -69,38 +81,37 @@ body {
     }
 }
 
+.black-keys {
+    position: relative;
+    display: flex;
+    margin-top: -200px;
+    z-index: 2;
+}
+.black-key, .black-key1 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60px;
+    height: 200px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    z-index: 1;
+} 
 
-        .black-keys {
-            position: relative;
-            display: flex;
-            margin-top: -200px;
-            z-index: 2;
-        }
-        .black-key, .black-key1 {
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;
-            height: 200px;
-            border: 2px solid #333;
-            text-align: center;
-            line-height: 200px;
-            position: absolute;
-            background-color: black;
-            color: white;
-            z-index: 1;
-        } 
-
-        .black-key:nth-child(1) { left: 105px; top: -200px;}
-        .black-key:nth-child(2) { left: 235px; top: -200px;}
-        .black-key:nth-child(3) { left: 505px; top: -200px;}
-        .black-key:nth-child(4) { left: 640px; top: -200px;}
-        .black-key:nth-child(5) { left: 775px; top: -200px;}
-        .black-key1:nth-child(1) { left: 1040px; top: -200px;}
-        .black-key1:nth-child(2) { left: 1175px; top: -200px;}
-        .black-key1:nth-child(3) { left: 1438px; top: -200px;}
-        .black-key1:nth-child(4) { left: 1575px; top: -200px;}
-        .black-key1:nth-child(5) { left: 1710px; top: -200px;}
+.black-key:nth-child(1) { left: 105px; top: -200px;}
+.black-key:nth-child(2) { left: 235px; top: -200px;}
+.black-key:nth-child(3) { left: 505px; top: -200px;}
+.black-key:nth-child(4) { left: 640px; top: -200px;}
+.black-key:nth-child(5) { left: 775px; top: -200px;}
+.black-key1:nth-child(1) { left: 1040px; top: -200px;}
+.black-key1:nth-child(2) { left: 1175px; top: -200px;}
+.black-key1:nth-child(3) { left: 1438px; top: -200px;}
+.black-key1:nth-child(4) { left: 1575px; top: -200px;}
+.black-key1:nth-child(5) { left: 1710px; top: -200px;}
 
 
 
