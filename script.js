@@ -91,7 +91,7 @@ Siblanca1.addEventListener("click", async () => {
 const DoNegra = document.getElementById("DoNegra");
 DoNegra.addEventListener("click", async () => {
     await Tone.start();
-    synth.triggerAttackRelease("B#4 ", "8n");
+    synth.triggerAttackRelease("C#4 ", "8n");
 });
 
 const ReNegra = document.getElementById("ReNegra");
@@ -145,10 +145,41 @@ SolNegraM.addEventListener("click", async () => {
 const LaNegraM = document.getElementById("LaNegraM");
 LaNegraM.addEventListener("click", async () => {
     await Tone.start();
-    synth.triggerAttackRelease("A#5", "8n"); 
+    synth.triggerAttackRelease("A#5", "8n");
+});
+
+
+const playButtom = document.getElementById("playButtom");
+playButtom.addEventListener("click", async () => {
+    await Tone.start();
+    synth.triggerAttackRelease("C4", "8n");
+    synth.triggerAttackRelease("C#4 ", "8n");
+    synth.triggerAttackRelease("D4", "8n", +0.5);
+    synth.triggerAttackRelease("D#4", "8n", +7.5);
+    synth.triggerAttackRelease("E4", "8n", +1);
+    synth.triggerAttackRelease("F4", "8n", +1.5);
+    synth.triggerAttackRelease("F#4", "8n", +8);
+    synth.triggerAttackRelease("G4", "8n", +2);
+    synth.triggerAttackRelease("G#4", "8n", +8.5);
+    synth.triggerAttackRelease("A4", "8n", +2,5);
+    synth.triggerAttackRelease("A#4", "8n", +9);
+    synth.triggerAttackRelease("B4", "8n", +3);
+    synth.triggerAttackRelease("C5", "8n", +3.5);
+    synth.triggerAttackRelease("C#5", "8n");
+    synth.triggerAttackRelease("D5", "8n", +4);
+    synth.triggerAttackRelease("D#5", "8n", +7.5);
+    synth.triggerAttackRelease("E5", "8n", +4.5);
+    synth.triggerAttackRelease("F5", "8n", +5);
+    synth.triggerAttackRelease("F#5", "8n", +8);
+    synth.triggerAttackRelease("G5", "8n", +5.5);
+    synth.triggerAttackRelease("G#5", "8n", +8.5);
+    synth.triggerAttackRelease("A5", "8n", +6);
+    synth.triggerAttackRelease("A#5", "8n", +6);
+    synth.triggerAttackRelease("B5", "8n", +6.5);
 });
 
 
 $(document).ready(function () {
     $('.js-example-basic-single').select2();
 });
+
