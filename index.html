@@ -13,8 +13,8 @@
     <div class="piano">
         <div id="octava-1">
             <select class="js-example-basic-single" name="Scale">
-                <option value="EMa">Escala Mayor</option>
-                <option value="EMe">Escala Menor</option>
+                <option id="1" class="Escala" value="EMa">Escala Mayor</option>
+                <option id="2" class="Escala" value="EMe">Escala Menor</option>
             </select>
             <select class="js-example-basic-single" name="Root-note">
                 <option value="">Do</option>
@@ -32,40 +32,39 @@
             </select>
             <button id="playButtom">Play</button>
             <div class="white-keys">
-                <button id="DoB" class="white-key">Do</button>
-                <button id="ReB" class="white-key">Re</button>
-                <button id="MiB" class="white-key">Mi</button>
-                <button id="FaB" class="white-key">Fa</button>
-                <button id="SolB" class="white-key">Sol</button>
-                <button id="LaB" class="white-key">La</button>
-                <button id="SiB" class="white-key">Si</button>
-                <button id="DoBM" class="white-key">Do</button>
-                <button id="ReBM" class="white-key">Re</button>
-                <button id="MiBM" class="white-key">Mi</button>
-                <button id="FaBM" class="white-key">Fa</button>
-                <button id="SolBM" class="white-key">Sol</button>
-                <button id="LaBM" class="white-key">La</button>
-                <button id="SiBM" class="white-key">Si</button>
+                <button id="1" class="white-key">Do</button>
+                <button id="2" class="white-key">Re</button>
+                <button id="3" class="white-key">Mi</button>
+                <button id="4" class="white-key">Fa</button>
+                <button id="5" class="white-key">Sol</button>
+                <button id="6" class="white-key">La</button>
+                <button id="7" class="white-key">Si</button>
+                <button id="8" class="white-key">Do</button>
+                <button id="9" class="white-key">Re</button>
+                <button id="10" class="white-key">Mi</button>
+                <button id="11" class="white-key">Fa</button>
+                <button id="12" class="white-key">Sol</button>
+                <button id="13" class="white-key">La</button>
+                <button id="14" class="white-key">Si</button>
             </div>
             <div class="black-keys">
                 <div id="octava-menor-blanca">
-                    <button id="DoNegra" class="black-key">Do#</button>
-                    <button id="ReNegra" class="black-key">Re#</button>
-                    <button id="FaNegra" class="black-key">Fa#</button>
-                    <button id="SolNegra" class="black-key">Sol#</button>
-                    <button id="LaNegra" class="black-key">La#</button>
+                    <button id="1" class="black-key">Do#</button>
+                    <button id="2" class="black-key">Re#</button>
+                    <button id="3" class="black-key">Fa#</button>
+                    <button id="4" class="black-key">Sol#</button>
+                    <button id="5" class="black-key">La#</button>
                 </div>
-                <div id="octava-mayor-negra"> 
-                    <button id="DoNegraM" class="black-key1">Do#</button>
-                    <button id="ReNegraM" class="black-key1">Re#</button>
-                    <button id="FaNegraM" class="black-key1">Fa#</button>
-                    <button id="SolNegraM" class="black-key1">Sol#</button>
-                    <button id="LaNegraM" class="black-key1">La#</button>
+                <div id="octava-mayo"> 
+                    <button id="6" class="black-key1 black-key">Do#</button>
+                    <button id="7" class="black-key1 black-key">Re#</button>
+                    <button id="8" class="black-key1 black-key" >Fa#</button>
+                    <button id="9" class="black-key1 black-key">Sol#</button>
+                    <button id="10" class="black-key1 black-key">La#</button>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.38/Tone.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
