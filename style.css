@@ -63,27 +63,77 @@ body {
     z-index: 1; 
 }
 
-.white-key:hover {
-    animation: brillito 2s infinite;
+.white-keyDo:hover {
+    background: url('./img/Notes/C.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keyRe:hover {
+    background: url('./img/Notes/D.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keyMi:hover {
+    background: url('./img/Notes/E.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keyFa:hover {
+    background: url('./img/Notes/F.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keySol:hover {
+    background: url('./img/Notes/G.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keyLa:hover {
+    background: url('./img/Notes/A.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
+}
+.white-keySi:hover {
+    background: url('./img/Notes/B.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: none;
+    background-size: 150px 394px;
+    color: white;
 }
 
-@keyframes brillito {
-    0% {
-        background: #ff7300; 
-    }
-    20% {
-        background: #df6c00;
-    }
-    30% {
-        background: #be5600;
-    }
-    50% {
-        background: #7e4300; 
-    }
-    100% {
-        background: #5c2c00; 
-    }
-}
 
 .black-keys {
     position: relative;
