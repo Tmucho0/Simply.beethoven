@@ -29,7 +29,7 @@ for (let i = 0; i < Negras.length; i++) {
             for (const i of armonizaciond) {
                 const notaArmonizada = synth.frequency.value * Math.pow(2, i / 120);
                 synth.triggerAttackRelease(notaArmonizada, "16n");
-                await new Promise(resolve => setTimeout(resolve, 1250));
+                await new Promise(resolve => setTimeout(resolve, 250));
             }
         }
         else if (Escala === "Escala-Menor") {
