@@ -2,22 +2,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background-color: #88bfd4 !important;
+    background-image: url('./img/Fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
-/* Estilos de las teclas */
+.piano {
+    margin-bottom: 15%;
+}
+
 .white-key {
     display: inline-block;
-    font-size: 18px;
+    font-size: 4vw; /* Utiliza vw para el tamaño de fuente */
     font-weight: bold;
     width: 130px;
     height: 400px;
     border: 2px solid #333;
-    text-align: center;
-    line-height: 200px;
     position: relative;
-    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .play {
@@ -25,7 +31,6 @@ body {
     height: 40px;
     cursor: pointer;
     color: #fff;
-    font-size: 17px;
     border-radius: 3rem;
     position: relative;
     background: #100720;
@@ -42,7 +47,7 @@ body {
     z-index: -1;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10;
 }
 
 .triangle {
@@ -64,20 +69,19 @@ body {
 
 @keyframes brillito {
     0% {
-        background: #88bfd4; 
+        background: #ff7300; 
     }
-    20%{
-        background: #54b2d8;
+    20% {
+        background: #df6c00;
     }
-    30%{
-        background: #37a8d4;
+    30% {
+        background: #be5600;
     }
     50% {
-        background: #129bd1; 
-        
+        background: #7e4300; 
     }
     100% {
-        background: #00709c; 
+        background: #5c2c00; 
     }
 }
 
@@ -112,6 +116,4 @@ body {
 .black-key1:nth-child(3) { left: 1438px; top: -200px;}
 .black-key1:nth-child(4) { left: 1575px; top: -200px;}
 .black-key1:nth-child(5) { left: 1710px; top: -200px;}
-
-
 

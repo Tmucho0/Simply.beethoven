@@ -8,66 +8,53 @@ const Negras = document.getElementsByClassName("black-key");
 
 for (let i = 0; i < Blancas.length; i++) {
     Blancas[i].addEventListener("click", function() {
-        synth.triggerAttackRelease(notes[i], "4n");
-    });
-  }
-
-for (let i = 0; i < Negras.length; i++) {
-    Negras[i].addEventListener("click", function() {
-        synth.triggerAttackRelease(notesnegras[i], "4n");
+        synth.triggerAttackRelease(notes[i], "16n");
     });
 }
 
-const playButtom = document.getElementById("BotonDePlay");
-playButtom.addEventListener("click", async () => {
-    const RootNote = document.getElementById("Root-note");
-    const EscalaMAYME = document.getElementById("Escalas");
-    const Escala = EscalaMAYME.value;
-    synth.frequency.value = RootNote.value;
-    if (Escala === "Escala-Mayor") {
-        let armonizacion = [20, 2, 4, 5, 7, 9, 11];
-        for (const st of armonizacion) {
-            const notaArmonizada = synth.frequency.value * Math.pow(2, st / 55);
-            synth.triggerAttackRelease(notaArmonizada, "4n");
-            await new Promise(resolve => setTimeout(resolve, 500));
+for (let i = 0; i < Negras.length; i++) {
+    Negras[i].addEventListener("click", function() {
+        synth.triggerAttackRelease(notesnegras[i], "16n");
+    });
+}
+
+    const playButtom = document.getElementById("BotonDePlay");
+    playButtom.addEventListener("click", async () => {
+        const RootNote = document.getElementById("Root-note");
+        const EscalaMAYME = document.getElementById("Escalas");
+        const Escala = EscalaMAYME.value;
+        synth.frequency.value = RootNote.value;
+        if (Escala === "Escala-Mayor") {
+            let armonizaciond = [0, 8, 10, 20, 21, 23, 24];
+            for (const i of armonizaciond) {
+                const notaArmonizada = synth.frequency.value * Math.pow(2, i / 120);
+                synth.triggerAttackRelease(notaArmonizada, "16n");
+                await new Promise(resolve => setTimeout(resolve, 1250));
+            }
         }
-    }
-    else if(Escala === "Escala-Menor") {
-        const armonizacion = [0, 2, 3, 5, 7, 8, 10];
-        for (const i of armonizacion) {
-            const notaArmonizada = synth.frequency.value * Math.pow(2, i / 100);
-            synth.triggerAttackRelease(notaArmonizada, "8n");
-            await new Promise(resolve => setTimeout(resolve, 500));
-
+        else if (Escala === "Escala-Menor") {
+            const armonizacionMenor = [0, 7, 10, 19, 21, 22, 23];
+            const armonizacionInversa = armonizacionMenor;
+            for (const i of armonizacionInversa) {
+                const notaArmonizada = synth.frequency.value * Math.pow(2, i / -100);
+                synth.triggerAttackRelease(notaArmonizada, "16n");
+                await new Promise(resolve => setTimeout(resolve, 230));
+            }
         }
-    }
-});
-const playButtom2 = document.getElementById("BotonDePlay2");
-playButtom2.addEventListener("click", async () => {
-    const escalaSelect = document.getElementById("Escalas2").value;
-    if (escalaSelect === "Escala-Mayor2") {
-        const armonizacion = [0, 4, 7, 12];
-        for (const i of armonizacion) {
-            const notaArmonizada = synth.frequency.value * Math.pow(2, i / 12);
-            synth.triggerAttackRelease(notaArmonizada, "8n");
-            await new Promise(resolve => setTimeout(resolve, 500));
+        let rootNoteValue = RootNote.value;
+        if (rootNoteValue.includes("#")) {
+            synth.frequency.value = rootNoteValue;
+            
+            if (Escala === "Escala-Negras") {
+                const armonizacionNotaNegra = [1, 3, 6, 8, 10];
+                for (const note of armonizacionNotaNegra) {
+                    const notaArmonizada = synth.frequency.value * Math.pow(2, note / 12);
+                    synth.triggerAttackRelease(notaArmonizada, "16n");
+                    await new Promise(resolve => setTimeout(resolve, 230));
+                }
+            }
         }
-    } else if (escalaSelect === "Escala-Menor2") {
-        const armonizacion = [0, 3, 7, 12];
-        for (const i of armonizacion) {
-            const notaArmonizada = synth.frequency.value * Math.pow(2, i / 12);
-            synth.triggerAttackRelease(notaArmonizada, "8n");
-            await new Promise(resolve => setTimeout(resolve, 500));
-        }
-    }
-});
-
-
-
-
-//Actividad a hacer:Representar la formula de la escala mayor en codigo, lo mismo con la escala menor.... Vamo que se puede kbaiero
-playButtom.addEventListener("click", async () => {
-});
+    });
 
 
 $(document).ready(function () {
