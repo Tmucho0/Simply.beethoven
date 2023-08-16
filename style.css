@@ -63,6 +63,12 @@ body {
     z-index: 1; 
 }
 
+.form-select {
+    border-color: rgb(172, 146, 0) !important; 
+    width: 200px !important;
+    height: 35px !important;
+}
+
 .white-keyDo:hover {
     background: url('./img/Notes/C.png'); /* Reemplaza con la ruta correcta de tu imagen */
     background-size: cover;

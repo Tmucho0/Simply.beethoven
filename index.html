@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <title>Document</title>
-</head>
-<body>
-    <div class="piano">
-        <div id="octava-1">
-            <select id="Escalas" name="Scale">
-                <option value="Escala-Mayor">Escala Mayor</option>
-                <option value="Escala-Menor">Escala Menor</option>
-            </select>
-            <select id="Root-note" name="Root-note">
-                <option value="C4">Do</option>
-                <option value="C#4">D#o</option>
-                <option value="D4">Re</option>
-                <option value="D#4">R#e</option>
-                <option value="E4">Mi</option>
-                <option value="F4">Fa</option>
-                <option value="F#4">F#a</option>
-                <option value="G4">Sol</option>
-                <option value="G#4">Sol#</option>
-                <option value="A4">La</option>
-                <option value="A#4">L#a</option>
-                <option value="B4">Si</option>
-            </select>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="piano">
+            <div class="d-flex flex-row">
+            <div class="EscalaDYM">
+                <select id="Escalas" class="form-select" name="Scale">
+                    <option value="Escala-Mayor">Escala Mayor</option>
+                    <option value="Escala-Menor">Escala Menor</option>
+                </select>
+                <select id="Root-note" class="form-select" name="Root-note">
+                    <option value="C4">Do</option>
+                    <option value="C#4">D#o</option>
+                    <option value="D4">Re</option>
+                    <option value="D#4">R#e</option>
+                    <option value="E4">Mi</option>
+                    <option value="F4">Fa</option>
+                    <option value="F#4">F#a</option>
+                    <option value="G4">Sol</option>
+                    <option value="G#4">Sol#</option>
+                    <option value="A4">La</option>
+                    <option value="A#4">L#a</option>
+                    <option value="B4">Si</option>
+                </select>
+            </div>
+
             <button id="BotonDePlay" class="play">
                 <span class="triangle"></span>
             </button>
+        </div>
             <div class="white-keys">
                 <button id="1" class="white-key white-keyDo">
                     <text>Do</text>
